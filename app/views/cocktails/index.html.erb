@@ -1,0 +1,20 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center">Cocktails</h1>
+    </div>
+  </div>
+
+  <div class="row">
+      <% @cocktails.each do |cocktail| %>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card text-center fixed-height" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),
+           url('http://res.cloudinary.com/dehymofqg/image/upload/c_fill,h_600,w_600/pexels-photo-109275_3_vdtoud')">
+          <div>
+            <h3> <%= cocktail.name %> </h3>
+            <p>nice and red</p>
+          </div>
+        </div>
+      </div>
+      <% end %>
+  </div>

@@ -6,10 +6,12 @@ class CocktailsController < ApplicationController
   end
 
   def show
+    @dose = Dose.new
   end
 
   def new
     @cocktail = Cocktail.new
+    @dose = Dose.new
   end
 
   def create

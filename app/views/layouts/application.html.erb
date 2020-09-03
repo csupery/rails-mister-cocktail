@@ -12,6 +12,18 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navbar-lewagon d-flex">
+      <div class="logo-title">
+        <a class="navbar-lewagon navbar-brand" href="/cocktails">
+          <span class="navbar-name"> <img src="/assets/logo.png" alt="Logo"> COCKTAIL LIST</span>
+        </a>
+      </div>
+      <div class="navbar-lewagon-right hidden-xs hidden-sm">
+        <a class="navbar-lewagon-item navbar-lewagon-button btn" href="/cocktails/new">Add a cocktail</a>
+      </div>
+    </div>
+    <div class="page-content">
+      <%= yield %>
+    </div>
   </body>
 </html>
